@@ -18,9 +18,9 @@ The data was split into 80% for training and 20% for evaluation.
 
 ## Metrics
 
-- Precision: 0.7387661843107388
-- Recall: 0.6360655737704918
-- Fbeta: 0.6835799859055673
+- Precision: 0.7252747252747253
+- Recall: 0.6342088404868674
+- Fbeta: 0.6766917293233083
 
 ## Ethical Considerations
 
