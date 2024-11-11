@@ -5,8 +5,8 @@ import uvicorn
 import pandas as pd
 from fastapi import FastAPI
 
-from starter.ml.data import process_data
-from starter.ml.model import inference
+from src.ml.data import process_data
+from src.ml.model import inference
 from data.model import Request
 
 
@@ -15,13 +15,13 @@ logging.basicConfig(
     format="%(asctime)s: %(name)s - %(levelname)s - %(message)s")
 
 model_dict = {}
-with open("src/model/model.pkl", "rb") as f:
+with open("model/model.pkl", "rb") as f:
     model_dict["model"] = pickle.load(f)
 
-with open("src/model/encoder.pkl", "rb") as f:
+with open("model/encoder.pkl", "rb") as f:
     model_dict["encoder"] = pickle.load(f)
 
-with open("src/model/lb.pkl", "rb") as f:
+with open("model/lb.pkl", "rb") as f:
     model_dict["lb"] = pickle.load(f)
 
 
